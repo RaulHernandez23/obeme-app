@@ -115,6 +115,21 @@ export default function Home() {
               </p>
             </div>
 
+            <div className="mt-5 pt-3 border-t border-slate-200">
+              <p className="text-xs text-slate-500 leading-relaxed">
+                <span className="font-medium text-slate-600">Fuente:</span>{" "}
+                Boletines del Observatorio de Educación Médica y Derechos Humanos (OBEME).
+              </p>
+              <a
+                href="https://www.uv.mx/obeme/publicaciones/boletines-informativos/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-blue-600 hover:underline"
+              >
+                Consultar boletines en PDF
+              </a>
+            </div>
+
             <div className="mt-5 flex justify-end">
               <button
                 onClick={() => setOpen(false)}
