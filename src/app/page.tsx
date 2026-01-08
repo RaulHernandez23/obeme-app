@@ -72,17 +72,48 @@ export default function Home() {
       {/* MODAL EXPLICACIÓN */}
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-          <div className="bg-white rounded-xl shadow-xl max-w-md w-full p-6">
+          <div className="bg-white rounded-xl shadow-xl max-w-3xl w-full p-6">
             <h2 className="text-lg font-semibold text-slate-800 mb-3">
               ¿Qué es IDHEDA?
             </h2>
 
-            <p className="text-sm text-slate-600 leading-relaxed justify">
-              El Índice de Derechos Humanos del Espacio Docente Asistencial (IDHEDA) se define como el porcentaje del puntaje obtenido en el cuestionario OBEME por toda la población de estudiantes.
-              <br />
-              <br />
-              Un puntaje de 100 significa que la institución ofrece un goce pleno del derecho a la educación y del derecho a la protección a la salud de los participantes.
-            </p>
+            <div className="space-y-3">
+              <p className="text-sm text-slate-600 leading-relaxed text-justify">
+                El Observatorio de Educación Médica y Derechos Humanos (OBEME) presenta el
+                Índice de Derechos Humanos del Espacio Docente Asistencial (IDHEDA). Este
+                índice se obtiene de la evaluación del Espacio Docente Asistencial (EDA)
+                que hacen los estudiantes de internado y el servicio social de la carrera
+                de Medicina, o de la evaluación al mismo que realizan las y los médicos
+                residentes.
+              </p>
+
+              <p className="text-sm text-slate-600 leading-relaxed text-justify">
+                El IDHEDA se define como el porcentaje del puntaje obtenido en las escalas
+                DERIM (para internos y pasantes) o en la escala DERES (residentes). Un
+                índice de 100% equivale a que toda la población de estudiantes de un EDA
+                otorga el puntaje máximo a todos los ítems de dichas escalas.
+              </p>
+
+              <p className="text-sm text-slate-600 leading-relaxed text-justify">
+                Además, se presenta la tendencia del IDHEDA que va de menos uno (-1) a más
+                uno (+1). La tendencia positiva significa progresividad en el IDHEDA y la
+                negativa regresión o retroceso.
+              </p>
+
+              <p className="text-sm text-slate-600 leading-relaxed text-justify">
+                Para conocer la tendencia del IDHEDA es necesario tener por lo menos un
+                par de evaluaciones; primero se establece la relación de cada IDHEDA
+                respecto a la medición anterior para establecer si aumentó (suma un
+                punto), quedó igual (ni suma ni resta) o disminuyó (resta un punto);
+                después el resultado se divide entre el número de comparaciones
+                realizadas.
+              </p>
+
+              <p className="text-sm text-slate-600 leading-relaxed text-justify">
+                La tendencia del IDHEDA es un indicador de la progresividad de los
+                derechos humanos en el Espacio Docente Asistencial.
+              </p>
+            </div>
 
             <div className="mt-5 flex justify-end">
               <button
