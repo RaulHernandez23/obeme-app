@@ -23,7 +23,7 @@ export default function Home() {
             className="h-10 w-auto object-contain"
           />
           <h1 className="text-xl font-bold tracking-tight text-slate-800">
-            Visualización de datos de la evaluación de los campos clínicos en medicina
+            Índice de Derechos Humanos en el Espacio Docente Asistencial
           </h1>
         </div>
 

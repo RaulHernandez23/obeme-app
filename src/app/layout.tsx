@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OBEME",
-  description: "Visualización de datos OBEME",
+  title: "IDHEDA - OBEME",
+  description: "Índice de derecho humanos en el espacio docente asistencial",
 };
 
 export default function RootLayout({
