@@ -2,6 +2,21 @@
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 
+const contributors = [
+  {
+    name: "Raúl Hernández",
+    role: "Desarrollo y visualización de datos",
+    year: 2025,
+  },
+  // En el futuro:
+  // {
+  //   name: "Nombre Apellido",
+  //   role: "Actualización de indicadores",
+  //   year: 2026,
+  // },
+];
+
+
 export default function Home() {
   const [open, setOpen] = useState(false);
 
@@ -23,7 +38,7 @@ export default function Home() {
             className="h-10 w-auto object-contain"
           />
           <h1 className="text-xl font-bold tracking-tight text-slate-800">
-            Índice de Derechos Humanos en el Espacio Docente Asistencial
+            Índice de Derechos Humanos en el Espacio Docente Asistencial (IDHEDA)
           </h1>
         </div>
 
@@ -53,7 +68,7 @@ export default function Home() {
 
             <div className="w-full h-[600px] lg:h-[calc(100vh-180px)] bg-slate-100 relative">
               <iframe
-                title="Dashboard OBEME"
+                title="Dashboard IDHEDA"
                 className="w-full h-full absolute inset-0"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNWE5ODg3OTYtY2IyYS00OGI5LWEzMTUtZWZkNjBjNjJlOGYzIiwidCI6IjNjOTA3NjUxLWQ4YzYtNGNhNi1hOGE0LTZhMjQyNDMwZTY1MyIsImMiOjR9&pageName=cdb896e294c13e6ea1f3"
                 frameBorder="0"
@@ -65,8 +80,21 @@ export default function Home() {
       </main>
 
       {/* FOOTER */}
-      <footer className="p-4 text-center text-gray-500 text-sm">
-        © 2025 Observatorio de Educación Médica Y Derechos Humanos
+      <footer className="px-4 py-3 text-center text-gray-500 text-xs border-t border-slate-200 bg-white">
+        <p className="mb-1">
+          © 2025 Observatorio de Educación Médica y Derechos Humanos (OBEME)
+        </p>
+
+        <p className="text-slate-400">
+          Desarrollo y mantenimiento:
+          {contributors.map((c, index) => (
+            <span key={c.name}>
+              {" "}
+              {c.name} ({c.year})
+              {index < contributors.length - 1 && ","}
+            </span>
+          ))}
+        </p>
       </footer>
 
       {/* MODAL EXPLICACIÓN */}
